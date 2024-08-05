@@ -1,0 +1,384 @@
+body {
+    background-color: #030303e3;
+    color: #e0e0e0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.header {
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text color */
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: right;
+}
+
+.nav__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin: 10px 15px;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav__link:hover {
+    font-weight: bolder;
+    color: rgb(105, 150, 249);
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    /* Full viewport height */
+    /* Dark background */
+}
+
+.home__container {
+    display: flex;
+    align-items: center;
+    /* Ensure vertical centering */
+}
+
+.home__content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.home__img {
+    flex: 0 0 auto;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.home__profile-img {
+    border-radius: 75%;
+    width: 250px;
+    /* Adjust size as needed */
+    height: 350px;
+    /* Adjust size as needed */
+}
+
+.home__data {
+    flex: 2;
+    color: #ece6e6;
+    margin-left: 8rem;
+    padding: 0;
+}
+
+.home__title {
+    margin-top: 0.25rem;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    /* Adjust as needed */
+    color: #f5f4f3;
+    /* Highlight title color */
+}
+
+.home__subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    /* Adjust as needed */
+    color: #cac8c8;
+}
+
+
+/* Button Styles */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.button--download {
+    background-color: #007bff;
+}
+
+.button--github {
+    background-color: #333;
+    padding: 5px;
+}
+
+.button--leetcode {
+    background-color: #f0ad4e;
+    padding: 5px;
+}
+
+.button--mail {
+    background-color: #cfcfd4;
+    padding: 5px;
+    color: rgb(26, 25, 25);
+}
+
+.button i {
+    margin-right: 0.5rem;
+}
+
+.button--download:hover {
+    background-color: #0056b3;
+}
+
+.button--github:hover {
+    background-color: #222;
+}
+
+.button--leetcode:hover {
+    background-color: #ec971f;
+}
+
+.button--mail:hover {
+    background-color: #f5f5f6;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__content {
+    flex: 1;
+    margin: 2.3rem;
+    /* Adjust the margin as needed */
+}
+
+.skills__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills__list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills__item {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.education__container {
+    background-color: #1c1c1e;
+    /* Dark background for the box */
+    border: 2px solid white;
+    /* White border for the entire container */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.education__content {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgb(60, 60, 60);
+    /* Yellow border between each section */
+    padding-bottom: 1.5rem;
+}
+
+.education__content:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    /* Remove the bottom border for the last item */
+    padding-bottom: 0;
+}
+
+.education__header {
+    margin-bottom: 0.5rem;
+}
+
+.education__info {
+    display: flex;
+    /* Flexbox for alignment */
+    align-items: center;
+    /* Align items vertically */
+    justify-content: space-between;
+    /* Space between items */
+}
+
+.education__qualification {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    /* Light text for contrast */
+    flex: 1;
+    /* Allows the qualification to take up available space */
+    white-space: nowrap;
+    /* Prevent line breaks within the text */
+}
+
+.education__year {
+    font-size: 1rem;
+    color: #bbb;
+    margin-left: 1rem;
+    /* Space between qualification and year */
+}
+
+.education__details {
+    display: flex;
+    justify-content: space-between;
+    /* Align details on both ends */
+}
+
+.education__institution {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.education__cgpa {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.project__box {
+    background-color: #1c1c1e;
+    /* Dark background for the project box */
+    border: 2px solid white;
+    /* White border for the project box */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    /* Light text for contrast */
+    margin-bottom: 0.5rem;
+}
+
+.project__description {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.project__link {
+    font-size: 1rem;
+    color: #ffcc00;
+    /* Yellow link color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project__link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact {
+    padding: 2rem 0;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact__container {
+    background-color: #1c1c1e;
+    border: 2px solid rgb(106, 104, 104);
+    /* White border for the container */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(15, 14, 14, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-group {
+    margin-bottom: 1rem;
+}
+
+.contact__form-label {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.contact__form-input {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #494949;
+    color: #fff;
+}
+
+.contact__form-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e90ff;
+    /* Blue background */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact__form-button:hover {
+    background-color: #1c86ee;
+    /* Darker blue on hover */
+}

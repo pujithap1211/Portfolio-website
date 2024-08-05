@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "8UJNwj7IjGVIe8IY7",
+            });
+        })();
+    </script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <ul class="nav__list grid">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--HOME SECTION-->
+
+    <section class="home section" id="home">
+        <div class="home__container container">
+            <div class="home__content">
+                <div class="home__img">
+                    <img src="puji2.jpg" alt="Profile-pic" class="home__profile-img">
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I'm Pujitha Padmanabhuni</h1>
+                    <p class="home__subtitle">Aspiring Computer Science Undergraduate seeking opportunities to apply my technical abilities in the field of Information Technology, aiming to enhance my skills and contribute to organizational growth.</p>
+                    <a href="Pujitha resume.pdf" class="button button--download" download>Download CV</a><br><br>
+                    <a href="https://github.com/pujithap1211" class="button button--github" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://leetcode.com/u/pujithap1211/" class="button button--leetcode" target="_blank">
+                        LeetCode
+                    </a>
+                    <a href="mailto:pujipadmanabhuni444@gmail.com" class="button button--mail">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SKILLS -->
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__container container">
+            <!-- Programming Languages -->
+            <div class="skills__content">
+                <h3 class="skills__title">Programming Languages</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">C</li>
+                    <li class="skills__item">Python</li>
+                    <li class="skills__item">SQL</li>
+                </ul>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skills__content">
+                <h3 class="skills__title">Web Development</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS</li>
+                    <li class="skills__item">JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Coursework -->
+            <div class="skills__content">
+                <h3 class="skills__title">Coursework</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Machine Learning</li>
+                    <li class="skills__item">Data Structures and Algorithms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="education section" id="education">
+        <h2 class="section__title">Education</h2>
+        <div class="education__container container">
+            <!-- Education Item 1 -->
+            <div class="education__content">
+                <div class="education__header">
+                    <div class="education__info">
+                        <h3 class="education__qualification">Bachelor of Technology</h3>
+                        <span class="education__year">CGPA: 9.38</span>
+                    </div>
+                </div>
+                <div class="education__details">
+                    <h4 class="education__institution">SRKR Engineering College</h4>
+                    <span class="education__cgpa">2021-2025</span>
+                </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="education__content">
+                <div class="education__header">
+                    <div class="education__info">
+                        <h3 class="education__qualification">Intermediate (MPC)</h3>
+                        <span class="education__year">Percentage: 97.2%</span>
+                    </div>
+                </div>
+                <div class="education__details">
+                    <h4 class="education__institution">Narayana Junior College</h4>
+                    <span class="education__cgpa">2019-2021</span>
+                </div>
+            </div>
+
+            <!-- Education Item 3 -->
+            <div class="education__content">
+                <div class="education__header">
+                    <div class="education__info">
+                        <h3 class="education__qualification">Class X</h3>
+                        <span class="education__year">Percentage: 92.4%</span>
+                    </div>
+                </div>
+                <div class="education__details">
+                    <h4 class="education__institution">J Sikile School</h4>
+                    <span class="education__cgpa">2018-2019</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__container container">
+            <!-- Project 1 -->
+            <div class="project__box">
+                <h3 class="project__title">Bank Payments Fraud Detection</h3>
+                <p class="project__description"> Developed and analyzed a foundational machine learning model capable of predicting fraudulent transactions in bank payments with an accuracy of 92%.</p>
+                <p class="project__description"> Utilized libraries such as NumPy, Pandas and Scikit-learn to implement the machine learning model.</p>
+                <a href="https://github.com/pujithap1211/Bank-Payments-Fraud-Detection" class="project__link" target="_blank">Github repository</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project__box">
+                <h3 class="project__title">Email Spam Detection</h3>
+                <p class="project__description">Developed an Email Spam Detection model to classify emails as spam or non-spam.</p>
+                <p class="project__description">Applied text preprocessing techniques such as lemmatization and used the Naive Bayes algorithm.</p>
+                <a href="https://github.com/pujithap1211/Email-Spam-Detection" class="project__link" target="_blank">Github repository</a><br>
+                <a href="https://email-spam-detection-eqm8i7cwfqpelb7y3cqefz.streamlit.app/" class="project__link" target="_blank">Visit Live</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <div class="contact__container container">
+            <form id="contact-form" class="contact__form">
+                <div class="contact__form-group">
+                    <label for="name" class="contact__form-label">Name</label>
+                    <input type="text" id="name" name="name" class="contact__form-input" required>
+                </div>
+                <div class="contact__form-group">
+                    <label for="email" class="contact__form-label">Email</label>
+                    <input type="email" id="email" name="email" class="contact__form-input" required>
+                </div>
+                <div class="contact__form-group">
+                    <label for="message" class="contact__form-label">Message</label>
+                    <textarea id="message" name="message" rows="5" class="contact__form-input" required></textarea>
+                </div>
+                <button type="submit" class="contact__form-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form values
+            var from_name = document.getElementById('name').value;
+            var email_id = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Send email using EmailJS
+            emailjs.send("service_pxlf8h3", "template_w1pihs4", {
+                    from_name: from_name,
+                    from_email: email_id,
+                    message: message
+                })
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your message has been sent successfully!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send your message. Please try again later.');
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
